@@ -1,0 +1,95 @@
+header {
+    text-align: center;
+    font-family: cursive;
+    background-color: rgba(0, 0, 0, 0.5);
+  
+    
+}
+
+header img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+header h1 {
+    font-size: 75px;
+    color: #daa520;
+    margin-bottom: 20px; 
+    text-shadow: 
+        0 0 5px #000000,  
+        0 0 10px #000000, 
+        0 0 15px #daa520, 
+        0 0 20px #daa520, 
+        0 0 30px #daa520,
+        0 0 40px #daa520; 
+}
+
+header p {
+    font-size: 40px;
+    color: white;
+    margin-top: 0;
+}
+
+body {
+    background-image: url(Fondo_pagina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    margin: 0;  
+    height: 100vh;  
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+}
+
+nav a.recervaciones {
+    background-image: url('recervaciones.png');
+    background-size: cover;
+    background-position: center;
+}
+
+nav a.platillos {
+    background-image: url('icon_platillos.png');
+    background-size: cover;
+    background-position: center;
+}
+
+nav a.bebidas {
+    background-image: url('icon_bebidas2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav a.contactos {
+    background-image: url('icon_contactos.png');
+    background-size: cover;
+    background-position: center;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+}
