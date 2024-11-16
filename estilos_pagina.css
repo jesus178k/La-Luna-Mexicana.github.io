@@ -1,51 +1,59 @@
+/* Estilos del encabezado */
 header {
     text-align: center;
-    font-family: cursive;
-    background-color: rgba(0, 0, 0, 0.5);
-  
-    
+    font-family: 'Cursive', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
 }
 
 header img {
     border-radius: 50%;
-    width: 200px;
+    width: 20vw; /* Escalable al ancho de la pantalla */
+    max-width: 200px; /* Límite superior */
+    height: auto; /* Mantiene proporciones */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
 
 header h1 {
-    font-size: 75px;
+    font-size: 6vw; /* Escalable al ancho de la pantalla */
+    max-font-size: 75px; /* Tamaño máximo */
     color: #daa520;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     text-shadow: 
-        0 0 5px #000000,  
-        0 0 10px #000000, 
+        0 0 5px #000,  
+        0 0 10px #000, 
         0 0 15px #daa520, 
         0 0 20px #daa520, 
         0 0 30px #daa520,
-        0 0 40px #daa520; 
+        0 0 40px #daa520;
 }
 
 header p {
-    font-size: 40px;
-    color: white;
+    font-size: 4vw; /* Escalable */
+    max-font-size: 40px; /* Límite superior */
+    color: #fff;
     margin-top: 0;
 }
 
+/* Fondo de la página */
 body {
-    background-image: url(Fondo_pagina.jpg);
+    background-image: url('fondo_pagina.jpg'); /* Ajustar nombre de archivo */
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-    margin: 0;  
-    height: 100vh;  
+    margin: 0;
+    height: 100vh;
 }
 
+/* Navegación */
 nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 2vw; /* Espaciado relativo */
+    flex-wrap: wrap; /* Ajuste automático en pantallas pequeñas */
 }
 
 nav li {
@@ -54,42 +62,36 @@ nav li {
 
 nav a {
     display: inline-block;
-    padding: 0;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     text-align: center;
     transition: transform 0.3s;
-    width: 290px;
-    height: 290px;
+    width: 20vw; /* Escalable */
+    height: 20vw; /* Escalable */
+    max-width: 290px; /* Límite superior */
+    max-height: 290px; /* Límite superior */
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
 nav a.recervaciones {
-    background-image: url('recervaciones.png');
-    background-size: cover;
-    background-position: center;
+    background-image: url('reservaciones.png'); /* Cambiar nombre si es necesario */
 }
 
 nav a.platillos {
     background-image: url('icon_platillos.png');
-    background-size: cover;
-    background-position: center;
 }
 
 nav a.bebidas {
     background-image: url('icon_bebidas2.png');
-    background-size: cover;
-    background-position: center;
 }
-
 
 nav a.contactos {
     background-image: url('icon_contactos.png');
-    background-size: cover;
-    background-position: center;
 }
 
 nav a:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efecto de agrandamiento */
 }
