@@ -31,12 +31,14 @@ header p {
 }
 
 body {
-    background-image: url(Fondo_pagina.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
-    margin: 0;  
-    height: 100vh;  
+    background-image: url('platillos_fondo2.jpg'); 
+    background-size: cover;           
+    background-position: center;   
+    background-attachment: fixed;      
+    margin: 0;                         
+    height: 100%;  
+    justify-items: center;
+    
 }
 
 nav ul {
@@ -44,8 +46,10 @@ nav ul {
     margin: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column; /* Cambia la dirección a vertical */
+    align-items: center; /* Centra los elementos */
+    gap: 20px; /* Espaciado entre los botones */
+
 }
 
 nav li {
@@ -54,15 +58,16 @@ nav li {
 
 nav a {
     display: inline-block;
-    padding: 0;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     text-align: center;
     transition: transform 0.3s;
-    width: 290px;
-    height: 290px;
-    overflow: hidden;
+    width: 80%; /* Ajusta el ancho relativo */
+    max-width: 290px; /* Límite de tamaño */
+    height: 80px; /* Ajusta la altura */
+    background-size: cover;
+    background-position: center;
 }
 
 nav a.recervaciones {
